@@ -33,7 +33,7 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "..", "client/build")));
 
 app.get("/", (req, res) => {
-  res.sendFile(join(__dirname, "..", "client/build/index.html"));
+  res.sendFile("https://carlosdahmen.github.io/setGame/");
 });
 
 app.use("/api", [useState, apiRouter]);
