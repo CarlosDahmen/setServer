@@ -32,7 +32,7 @@ const useState = (req, res, next) => {
 
 app.use(
   cors({
-    origin: "https://carlosdahmen.github.io/",
+    origin: "*",
   })
 );
 
