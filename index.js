@@ -11,11 +11,6 @@ const require = createRequire(import.meta.url);
 const highscores = require("./data/highscores.json");
 
 const cors = require("cors");
-app.use(
-  cors({
-    origin: "https://carlosdahmen.github.io/",
-  })
-);
 
 const __dirname = path.resolve();
 
@@ -34,6 +29,12 @@ const useState = (req, res, next) => {
   req.state = state;
   next();
 };
+
+app.use(
+  cors({
+    origin: "https://carlosdahmen.github.io/",
+  })
+);
 
 app.use(bodyParser.json());
 
