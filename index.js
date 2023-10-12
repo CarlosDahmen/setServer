@@ -6,7 +6,7 @@ import { Server } from "socket.io";
 import { socket } from "./socket/index.js";
 import apiRouter from "./api/index.js";
 import bodyParser from "body-parser";
-import highscores from "./data/highscores.json"
+const highscores = require("./data/highscores.json")
 
 const __dirname = path.resolve();
 
